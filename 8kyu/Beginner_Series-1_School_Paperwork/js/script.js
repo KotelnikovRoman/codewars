@@ -1,4 +1,4 @@
-//my code
+//--------my code-------------
 function paperwork(n, m) {
     if (n < 0 || m < 0) {
         return 0;
@@ -10,7 +10,7 @@ function paperwork5(n, m) {
     return Math.floor(Math.max(0, n) * Math.max(0, m));
 }
 
-//codewars
+//------------codewars---------------
 function paperwork2(n, m) {
     /**
      * вернуть n * m если условие верно

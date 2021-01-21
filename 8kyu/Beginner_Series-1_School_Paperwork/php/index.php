@@ -14,7 +14,23 @@ function paperwork3(int $n, int $m): int {
     return ($n < 0 or $m < 0) ? 0 : $n * $m;
 }
 
-$number = paperwork2(3, 2);
+/** на мой взгляд код излишен */
+function paperwork4(int $n, int $m): int {
+    if ($n < 0 || $m < 0 || !is_numeric($n) || !is_numeric($m)) {
+        return 0;
+    }
+    return $n * $m;
+}
+
+function paperwork5(int $n, int $m): int {
+    if(min($n, $m) <= 0) {
+        return 0;
+    }
+    return $n * $m;
+}
+
+
+$number = paperwork5(2, 10);
 
 echo $number;
 
