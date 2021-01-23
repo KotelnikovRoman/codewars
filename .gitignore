@@ -1,4 +1,4 @@
 .vs
 Debug
-codewars/**/cpp/script/*
-!codewars/**/cpp/script/script/*.cpp
+cpp/script/*
+cpp/script/script/*.cpp
