@@ -1,7 +1,4 @@
 .vs
-Debug
-cpp/script/*
-cpp/script/script/script.vcxproj
-cpp/script/script/script.vcxproj.filters
-cpp/script/script/script.vcxproj.user
-cpp/script/script/*.cpp
+**cpp/
+!**cpp/script/script/main.cpp
+
