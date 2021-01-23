@@ -1,4 +1,5 @@
 #include <iostream>
+// for paperwork3
 #include <algorithm>
 
 // my code
@@ -12,7 +13,6 @@ auto paperwork2(int n, int m) -> int {
 }
 
 int paperwork3(int n, int m) {
-	// librery algorithm
 	return std::max(n, 0) * std::max(m, 0);
 }
 
