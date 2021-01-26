@@ -26,9 +26,11 @@ function isDivisible6(n, x, y) {
 }
 
 function isDivisible7(n, x, y) {
-    return [n % x, n % y].every(Number.isInteger);
+    return [n / x, n / y].every(Number.isInteger);
 }
 
-var number_bool = isDivisible7(10, 3, 4);
+const isDivisible8 = (n, x, y) => n % x + n % y;
+
+var number_bool = isDivisible7(20, 5, 4);
 
 document.write(number_bool);
