@@ -1,11 +1,11 @@
 
 # my code
-import itertools
+# import itertools
 
 
 def positive_sum(arr):
+    number = 0
     for x in range(len(arr)):
-        number = 0
         if arr[x] > 0:
             number += arr[x]
     return number
