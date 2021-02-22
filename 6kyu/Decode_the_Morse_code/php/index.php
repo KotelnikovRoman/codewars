@@ -1,6 +1,8 @@
 <?php
 
 function decode_morse(string $code): string {
+    $code = ".... . -.--   .--- ..- -.. .";
+    $text = "";
     $morse = [
         ".-", 
         "-...", 
@@ -78,6 +80,15 @@ function decode_morse(string $code): string {
         "_ _ _ _.",
         "_ _ _ _ _"
     ];
+    for($i = 0; $i < str_word_count($code); $i++) {
+        if(in_array($code[$i], $morse)) {
+            $text += $code[$i];
+        }
+    }
+    echo substr_count($text, " ");
+    return $code;
 }
+
+decode_morse("Hello world");
 
 ?>
