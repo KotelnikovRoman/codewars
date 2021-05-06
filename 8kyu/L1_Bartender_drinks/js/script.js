@@ -31,7 +31,7 @@ function getDrinkByProfession(param){
 }
 
 //codewars
-function getDrinkByProfession(param) {
+function getDrinkByProfession2(param) {
     param = param.toLowerCase();
 
     switch(param) {
@@ -44,3 +44,32 @@ function getDrinkByProfession(param) {
         default: return "Beer";
     }
 }
+
+const drinks = {
+    "jabroni": "Patron Tequila",
+    "school counselor": "Anything with Alcohol",
+    "programmer": "Hipster Craft Beer",
+    "bike gang member": "Moonshine",
+    "politican": "Your tax dollars",
+    "rapper": "Cristal"
+}
+
+const getDrinkByProfession3 = profession => drinks[profession.toLowerCase()] || "Beer";
+
+function getDrinkByProfession4(param) {
+    let map = new Map([
+        ["jabroni", "Patron Tequila"],
+        ["school counselor", "Anything with Alcohol"],
+        ["programmer", "Hipster Craft Beer"],
+        ["bike gang member", "Moonshine"],
+        ["politican", "Your tax dollars"],
+        ["rapper", "Cristal"]
+    ]);
+    let normal = param.toLowerCase();
+
+    return map.has(normal) ? map.get(normal) : "Beer";
+}
+
+
+profi = getDrinkByProfession4("Programmer");
+document.write(profi);
